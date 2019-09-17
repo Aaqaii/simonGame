@@ -50,7 +50,7 @@ else{
   $("h1").html("Game-Over,Press any key to restart");
   troggle=true;
   level=0;
-
+gamePattern=[];
 }
 }
 function nextSequence(){
