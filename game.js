@@ -7,8 +7,10 @@ $(document).keypress(function(event){
     $("h1").html("Level "+level);
 
     if(troggle){
+
   nextSequence(event.key);
   troggle=false;
+
 }
 });
 
@@ -40,6 +42,7 @@ function checkAnswer(currentLevel){
   }
 }
 else{
+
   var a=new Audio("sounds/wrong.mp3");
   a.play();
 
@@ -50,7 +53,7 @@ else{
   $("h1").html("Game-Over,Press any key to restart");
   troggle=true;
   level=0;
-gamePattern=[];
+  gamePatteren=[];
 }
 }
 function nextSequence(){
